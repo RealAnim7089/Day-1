@@ -19,7 +19,7 @@ def total_distance(array1, array2):   # Part 1
 
   return sum(empty_l)
 
-def part2(array1, array2):
+def part2(array1, array2):              # Part 2
   empty_l = []
   new_list = list(zip(array1, array2))
 
@@ -27,4 +27,5 @@ def part2(array1, array2):
     empty_l.append(num1 * array2.count(num1))
   return sum(empty_l)
 
-part2(left,right)
+print(part2(left,right))
+print(total_distance(left, right))
